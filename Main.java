@@ -57,5 +57,24 @@ public class Main {
          System.out.println("Flipped tails! Wear black.");
       }
 
+      // MULTI-WAY SELECTION 
+      // 1. NESTING if statments is like asking "follow-up questions"
+      int age = 16; 
+      boolean havePermit = true; 
+      System.out.println("Let's see if you can take this road test...");
+      if (age >= 16) {
+         System.out.println("Alright, I guess you're old enough...");
+         // After passing the first condition (age >= 16) you ask a FOLLOWUP (another if statement)
+
+         if (havePermit == true) {
+            System.out.println("Fine, get in the car."); 
+         }
+      } 
+      else {
+         System.out.println("You're too young. "); 
+      }
+
+
+
    }
 }
