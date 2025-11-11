@@ -92,5 +92,57 @@ public class Main {
          System.out.println("🪫"); 
       }
 
+       // COMPOUND BOOLEAN EXPRESSIONS 
+      // to test TWO conditions in an if statement 
+      boolean cleanedRoom = true; 
+      boolean didHomework = false; 
+      // The AND (&&) operator joins two expressions 
+      // only comes out to TRUE if BOTH ARE TRUE!
+      if ((cleanedRoom == true) && (didHomework == true)) {
+         System.out.println("Go have fun!"); 
+      }
+      else {
+         System.out.println("nuh uh"); 
+      }
+
+      // The OR (||) operator joins two expressions 
+      // comes out to TRUE if AT LEAST ONE is TRUE! 
+      // (less restricitive condition than AND) 
+      if ((cleanedRoom == true) || (didHomework == true)) {
+         System.out.println("The less strict parents are fine with you going out!"); 
+      }
+
+      // The NOT (!) operator can be used to NEGATE 
+      // a boolean expression 
+      if (! (didHomework == true)) {
+         System.out.println("Do your CodeCollab! The class is depending on you!"); 
+      }
+      // REMINDER: boolean VARIABLES can be used 
+      // instead of full EXPRESSIONS (with relational operators)
+      if (!didHomework) {
+         System.out.println("You did not do your homework!"); 
+      }
+
+      // IMPORTANT NOTE ABOUT STRINGS: 
+      // (and other object data types)
+      // You can't use the == operator to CHECK EQUALITY instead, use a String Method called .equals() 
+      String course = "AP Computer Science"; 
+      if (course.equals("AP Computer Science")) {
+         System.out.println("Time to learn JAVA!"); 
+      }
+      // .equals is CASE-SENSITIVE 
+      // it checks every single character in order between the 2 Strings 
+
+      String message1 = "Hello World"; 
+      String message2 = "Hello World"; 
+      if (message1.equals(message2)) {
+         System.out.println("The messages match perfectly!"); 
+      }
+      // You can mix String VARIABLES with String LITERALS 
+      // ex) both are String LITERALS below 
+      if ("hi".equals("hi")) {
+         System.out.println("hi"); 
+      }
+
    } // this closes the main METHOD 
 } // this closes the Main CLASS
